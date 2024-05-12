@@ -1,14 +1,6 @@
 # api-generator
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Plugin for Vue 2, based on config file which create api extra axios instances by keyword with error-handler and set it into Vue proto.
 
 ## Project Setup
 
@@ -16,7 +8,7 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Run demo for test
 
 ```sh
 npm run dev
