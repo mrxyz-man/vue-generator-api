@@ -1,14 +1,14 @@
 {
-  "name": "api-generator",
+  "name": "vue-generator-api",
   "version": "1.0.0",
   "type": "module",
   "files": ["dist"],
-  "main": "./dist/api-generator.umd.cjs",
-  "module": "./dist/api-generator.js",
+  "main": "./dist/vue-generator-api.umd.cjs",
+  "module": "./dist/vue-generator-api.js",
   "exports": {
     ".": {
-      "import": "./dist/api-generator.js",
-      "require": "./dist/api-generator.umd.cjs"
+      "import": "./dist/vue-generator-api.js",
+      "require": "./dist/vue-generator-api.umd.cjs"
     }
   },
   "scripts": {
