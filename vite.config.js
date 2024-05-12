@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'lib/index.js'),
-      name: 'ApiGenerator',
-      fileName: 'api-generator',
+      name: 'VueGeneratorApi',
+      fileName: 'vue-generator-api',
     },
     copyPublicDir: false,
   },
