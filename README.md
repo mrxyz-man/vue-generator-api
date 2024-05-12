@@ -1,4 +1,4 @@
-# api-generator
+# vue-generator-api
 
 Plugin for Vue 2, based on config file which create api extra axios instances by keyword with error-handler and set it into Vue proto.
 
