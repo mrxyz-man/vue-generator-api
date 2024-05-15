@@ -1,6 +1,6 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import nodePolyfills from 'rollup-plugin-polyfill-node';
+import { viteExternalsPlugin } from 'vite-plugin-externals';
 import vue from '@vitejs/plugin-vue2';
 
 // https://vitejs.dev/config/
@@ -15,6 +15,8 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-    nodePolyfills(),
+    viteExternalsPlugin({
+      axios: 'Axios',
+    }),
   ],
 });
