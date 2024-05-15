@@ -1,6 +1,6 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import { nodePolyfills } from 'vite-plugin-node-polyfills';
+import nodePolyfills from 'rollup-plugin-polyfill-node';
 import vue from '@vitejs/plugin-vue2';
 
 // https://vitejs.dev/config/
