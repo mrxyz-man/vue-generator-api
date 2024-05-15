@@ -2,7 +2,9 @@
   "name": "vue-generator-api",
   "version": "1.0.2",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/vue-generator-api.umd.cjs",
   "module": "./dist/vue-generator-api.js",
   "exports": {
@@ -26,8 +28,9 @@
     "eslint-plugin-vue-pug": "^0.6.2",
     "pug": "^3.0.2",
     "vite": "^5.2.8",
-    "vue-eslint-parser": "^9.4.2",
-    "vue": "^2.7.16"
+    "vite-plugin-node-polyfills": "^0.21.0",
+    "vue": "^2.7.16",
+    "vue-eslint-parser": "^9.4.2"
   },
   "dependencies": {
     "axios": "^1.6.8"
