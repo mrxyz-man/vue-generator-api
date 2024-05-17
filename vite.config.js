@@ -17,7 +17,7 @@ export default defineConfig({
     vue(),
     babel({
       exclude: 'node_modules/**',
-      babelHelpers: 'runtime',
+      babelHelpers: 'inline',
       extensions: ['.js', '.jsx', '.es6', '.es', '.mjs', 'ts'],
     }),
   ],
