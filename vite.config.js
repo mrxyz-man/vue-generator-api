@@ -1,6 +1,6 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import { viteExternalsPlugin } from 'vite-plugin-externals';
+import { babel } from '@rollup/plugin-babel';
 import vue from '@vitejs/plugin-vue2';
 
 // https://vitejs.dev/config/
@@ -15,8 +15,10 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-    viteExternalsPlugin({
-      axios: 'Axios',
+    babel({
+      exclude: 'node_modules/**',
+      babelHelpers: 'runtime',
+      extensions: ['.js', '.jsx', '.es6', '.es', '.mjs', 'ts'],
     }),
   ],
 });
