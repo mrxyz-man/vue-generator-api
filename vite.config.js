@@ -1,11 +1,11 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import { babel } from '@rollup/plugin-babel';
 import vue from '@vitejs/plugin-vue2';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
+    target: 'es2015',
     lib: {
       entry: resolve(__dirname, 'lib/index.js'),
       name: 'VueGeneratorApi',
@@ -15,10 +15,5 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-    babel({
-      exclude: 'node_modules/**',
-      babelHelpers: 'inline',
-      extensions: ['.js', '.jsx', '.es6', '.es', '.mjs', 'ts'],
-    }),
   ],
 });
